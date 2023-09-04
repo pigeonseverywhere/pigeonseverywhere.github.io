@@ -28,7 +28,7 @@
 			else backToTopButton.classList.add('hidden')
 		}
 	}
-  function reveal() {
+  const reveal = () => {
   var reveals = document.querySelectorAll(".reveal");
 
   for (var i = 0; i < reveals.length; i++) {
@@ -44,11 +44,14 @@
   }
 }
 
-window.addEventListener("scroll", reveal);
-  const handleScroll = () => {
-    console.log("scrollin'")
-    if (!backToTopButton) return;
+const handleTop = () => {
+  if (!backToTopButton) return;
     scrolled = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
+}
+
+  const handleScroll = () => {
+    handleTop();
+    reveal();
   }
 
   const scrollToTop = () => {
@@ -64,7 +67,7 @@ window.addEventListener("scroll", reveal);
     <Hero/>
   <ToggleTheme/>
   </div>
-  <CTAButton message="CTA test hello" href="/"/>
+  <!-- <CTAButton message="CTA test hello" href="/"/> -->
     <div class="flex justify-center space-y-4">
     <div class="grid grid-cols-3 xl:grid-cols-2 md:grid-cols-1 gap-4" >
       {#each projects as project (project.name)}
