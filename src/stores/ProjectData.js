@@ -5,6 +5,19 @@ import sunswift from "../assets/project_sunswift_erp.png"
 
 const ProjectData =  writable([
     {
+        name: "Sunswift ERP",
+        description: "Enterprise resource management project created for Sunswift UNSW",
+        img: sunswift,
+        skills : [
+            "JavaScript",
+            "React",
+            "Rest API",
+            "Python",
+            "AWS",
+            "PostgreSQL"
+        ]
+    },
+    {
         name: "Cuppa",
         description: "A minimalist MacOS menubar widget for keeping your mac screen awake",
         img: cuppa,
@@ -22,19 +35,6 @@ const ProjectData =  writable([
             "Node.js",
             "TypeScript",
             "SQLite"
-        ]
-    },
-    {
-        name: "Sunswift ERP",
-        description: "Enterprise resource management project created for Sunswift UNSW",
-        img: sunswift,
-        skills : [
-            "JavaScript",
-            "React",
-            "Rest API",
-            "Python",
-            "AWS",
-            "PostgreSQL"
         ]
     },
     // {

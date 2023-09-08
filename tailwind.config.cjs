@@ -4,6 +4,9 @@ const config = {
 
   theme: {
     extend: {
+      fontFamily: {
+        sourcesans: ["Source\\ Sans\\ 3"]
+      },
       colors: {
         text: "rgb(var(--color-text) / <alpha-value>)",
         background: "rgb(var(--color-background) / <alpha-value>)",
