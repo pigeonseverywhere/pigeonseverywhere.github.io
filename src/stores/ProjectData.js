@@ -5,10 +5,11 @@ import sunswift from "../assets/project_sunswift_erp.png"
 
 const ProjectData =  writable([
     {
-        name: "Sunswift ERP",
+        name: "ERP project for Sunswift",
         description: "Enterprise resource management project created for Sunswift UNSW",
         img: sunswift,
-        link: "/",
+        link: "https://www.sunswift.com",
+        external: false,
         skills : [
             "JavaScript",
             "React",
@@ -22,6 +23,7 @@ const ProjectData =  writable([
         name: "Cuppa",
         description: "A minimalist MacOS menubar widget for keeping your mac screen awake",
         img: cuppa,
+        external: true,
         link: "https://github.com/pigeonseverywhere/cuppa",
         skills: [
             "Swift",
@@ -33,7 +35,8 @@ const ProjectData =  writable([
         name: "Shelves",
         description: "A virtual bookshelf on the commandline to help you keep track of your readings",
         img: shelves,
-        link: "https://github.com/pigeonseverywhere/shelves",
+        external: true,
+        link: "https://www.npmjs.com/package/shelves-cli",
         skills : [
             "Node.js",
             "TypeScript",

@@ -1,11 +1,11 @@
 <script>
   import Icon from '@iconify/svelte';
   import ToggleTheme from './ToggleTheme.svelte';
-  import placeholderLogo from '.././assets/bird.png'
   import darkLogo from '.././assets/YD_white.svg'
   import lightLogo from '.././assets/YD.svg'
   import { theme } from '../stores/Config';
   import Links from './Links.svelte';
+  import { link } from 'svelte-routing';
 
   let scrolled = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
   let navInView = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300)
@@ -27,7 +27,7 @@
 
 
 <nav class="sticky flex text-text top-0 z-50 backdrop-blur-sm bg-opacity-50 transition-all duration-500 ease-out px-5 pt-5 md:py-5 md:w-full" class:align={!scrolled}>
-  <a href="#" class="flex items-center">
+  <a href="/" use:link replace class="flex items-center">
         <img src={isLight ? lightLogo : darkLogo} class="h-8 mr-3" alt="Logo" width="50"/>
   </a>
     
