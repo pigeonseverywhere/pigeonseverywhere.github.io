@@ -8,10 +8,11 @@ const ProjectData =  writable([
         name: "Sunswift ERP",
         description: "Enterprise resource management project created for Sunswift UNSW",
         img: sunswift,
+        link: "/",
         skills : [
             "JavaScript",
             "React",
-            "Rest API",
+            "FastAPI",
             "Python",
             "AWS",
             "PostgreSQL"
@@ -21,6 +22,7 @@ const ProjectData =  writable([
         name: "Cuppa",
         description: "A minimalist MacOS menubar widget for keeping your mac screen awake",
         img: cuppa,
+        link: "https://github.com/pigeonseverywhere/cuppa",
         skills: [
             "Swift",
             "Objective-C",
@@ -31,31 +33,13 @@ const ProjectData =  writable([
         name: "Shelves",
         description: "A virtual bookshelf on the commandline to help you keep track of your readings",
         img: shelves,
+        link: "https://github.com/pigeonseverywhere/shelves",
         skills : [
             "Node.js",
             "TypeScript",
             "SQLite"
         ]
     },
-    // {
-    //     name: "placeholder a",
-    //     description: "placeholder a random",
-    //     img: shelves,
-    //     skills: [
-    //         "skill1",
-    //         "skill2",
-    //         "skill2",
-    //         "skill4"
-    //     ]
-    // },
-    // {
-    //     name: "placeholder b",
-    //     description: "placeholder b random",
-    //     skills: [
-    //         "skill x",
-    //         "skill c"
-    //     ]
-    // }
 ])
 
 export default ProjectData;

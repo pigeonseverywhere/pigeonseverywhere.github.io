@@ -7,7 +7,8 @@
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   line-height: 1.5;
   font-weight: 400;
-
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 
   --color-text: 14 13 7;
   --color-background: 239 237 220;
@@ -42,6 +43,7 @@ transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   --color-secondary: 8 14 43;
   --color-accent: 217 187 38;
   background-color: #060b23;
+  /* background-image: url("./assets/stacked_bg.svg"); */
   /* --text: #f5f4eb;
 --background: #18170c;
 --primary: #26294a;
@@ -64,7 +66,7 @@ body {
   /* padding: 1rem 0rem 1rem 0rem; */
   display: flex;
   place-items: center;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  /* transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; */
 }
 
 h1 {
@@ -80,21 +82,8 @@ h1 {
 #app {
   width: 100%;
   height: 100%;
-  margin: 0 20%;
+  /* margin: 0 20%; */
   text-align: left;
-}
-
-@media screen and (max-width: 1287px) {
-  #app {
-    margin: 0 10%;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  #app {
-    /* padding: 5rem 5%; */
-    margin: 0
-  }
 }
 
 button {

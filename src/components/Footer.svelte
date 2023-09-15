@@ -13,11 +13,11 @@
 <section class="bg-background brightness-110 w-screen absolute flex content-center left-0 mt-20 py-20 text-text">
   <div class="px-4 py-12 mx-auto overflow-hidden">
       <div class="flex justify-center space-x-4 dim">
-          <a href="#" class:lightenText={isLight} class="text-text hover:scale-110 transition-all">
+          <a href="https://github.com/pigeonseverywhere" class:lightenText={isLight} class="text-text hover:scale-110 transition-all">
               <span class="sr-only">GitHub</span>
               <Icon icon="mdi:github" width="1.5rem"/>
           </a>
-          <a href="#" class:lightenText={isLight} class="text-text hover:scale-110 transition-all">
+          <a href="https://www.linkedin.com/in/yunshud/" class:lightenText={isLight} class="text-text hover:scale-110 transition-all">
               <span class="sr-only">Linkedin</span>
               <Icon icon="mdi:linkedin" width="1.5rem"/>
           </a>
@@ -26,8 +26,8 @@
             <Icon icon="mdi:email-send-outline" width="1.5rem" />
         </a>
       </div>
-      <p class:lightenText={isLight} class="mt-6 leading-6 text-xl font-bold dim text-text">
-        Designed and built by Yunshu Dai
+      <p class:lightenText={isLight} class="mt-6 leading-6 text-center text-lg font-bold dim text-text">
+        Yunshu Dai 
       </p>
       <p class:lightenText={isLight} class="leading-6 text-sm text-center dim text-text">
           Made with Svelte and TailwindCSS

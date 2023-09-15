@@ -42,6 +42,11 @@ const config = {
 
       'sm': {'max': '639px'},
       // => @media (max-width: 639px) { ... }
+
+      'xs': {'max': '400px'},
+
+      'tall': { 'raw': '(max-height: 800px)' },
+      // => @media (min-height: 800px) { ... }
     },
     fontFamily: {
         sans: ['Inter', 'system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
