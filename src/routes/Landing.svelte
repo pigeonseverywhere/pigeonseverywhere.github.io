@@ -54,11 +54,12 @@ const handleTop = () => {
 
 
 <main class="snap-mandatory snap-y">
-  <section id="about" class="flex flex-col items-start justify-items-center w-full snap-start snap-always">
+  <section id="about" class="flex items-start justify-items-center w-full snap-start snap-always">
     <About/>
   </section>
  
-  <section id="projects" class="snap-start snap-always">
+  <section id="projects" class="snap-start">
+    <div class="h-16"></div>
     <h1 class="font-bold font-sourcesans tracking-wide text-text text-6xl mb-2 px-5 pb-10">Projects</h1>
     <Projects/>
   </section>

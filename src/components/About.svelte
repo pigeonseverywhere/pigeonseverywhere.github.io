@@ -35,9 +35,9 @@
 
 
 
-<div class="w-full flex flex-col justify-between pt-72 2xl:pt-40 md:pt-72 align-center md:px-5 h-screen md:flex-col">
+<div class="w-full flex flex-col justify-between pt-40 2xl:pt-40  sm:pt-40 align-center md:px-5 h-screen md:flex-col tall:pt-64 ">
   <div class="flex justify-center md:flex-col">
-    <img src={isLight ? lightLogo : darkLogo} alt="logo" class="hidden md:block w-11/12 md:-mt-80">
+    <img src={isLight ? lightLogo : darkLogo} alt="logo" class="hidden md:block w-11/12 md:-mt-60">
     <div class="flex flex-col">
       <div use:actionWhenInViewport class:active={inView} class="reveal">
         <h1 class="font-bold font-sourcesans tracking-wide text-text text-6xl md:text-4xl mb-2">Hi, I'm Yunshu Dai</h1>
@@ -70,8 +70,7 @@
     </div>
     <img src={isLight ? lightLogo : darkLogo} alt="logo" class="self-start pl-10 -mt-5 md:hidden" width="300">
   </div>
-  <a href="#projects" class="md:hidden self-center text-text brightness-75 py-2 rounded  hover:bg-transparent flex flex-col align-center items-center -translate-y-28 hover:-translate-y-24 transition-transform ease-in-out duration-700">
-    <!-- <p>PROJECTS</p> -->
+  <a href="#projects" class="md:hidden self-center text-text brightness-75 py-2 rounded  hover:bg-transparent flex flex-col align-center items-center -translate-y-56 hover:-translate-y-52 transition-transform ease-in-out duration-700">
     <Icon icon="mingcute:down-fill" width="20"/>
   </a>
  

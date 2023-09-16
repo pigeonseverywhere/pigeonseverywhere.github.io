@@ -45,8 +45,8 @@ const config = {
 
       'xs': {'max': '400px'},
 
-      'tall': { 'raw': '(max-height: 800px)' },
-      // => @media (min-height: 800px) { ... }
+      'tall': { 'raw': '(min-height: 900px)' },
+      // => @media (max-height: 900px) { ... }
     },
     fontFamily: {
         sans: ['Inter', 'system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],

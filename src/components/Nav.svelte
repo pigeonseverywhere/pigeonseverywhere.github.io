@@ -26,9 +26,9 @@
 <svelte:window on:scroll={handleScroll}/> 
 
 
-<nav class="sticky flex text-text top-0 z-50 backdrop-blur-sm bg-opacity-50 transition-all duration-500 ease-out px-5 pt-5 md:py-5 md:w-full" class:align={!scrolled}>
+<nav class="sticky flex text-text top-0 z-50 backdrop-blur-sm bg-opacity-50 transition-all duration-500 ease-out px-5 pt-5 md:pt-2 md:pb-2" class:align={!scrolled}>
   <a href="/" use:link replace class="flex items-center">
-        <img src={isLight ? lightLogo : darkLogo} class="h-8 mr-3" alt="Logo" width="50"/>
+        <img src={isLight ? lightLogo : darkLogo} class="h-8 pr-3" alt="Logo" width="50"/>
   </a>
     
   <div class="flex flex-wrap justify-end items-center w-full pl-4">
@@ -48,11 +48,6 @@
   .align { 
     margin: 0 18%;
   }
-  /* @media screen and (max-width: 1400px) {
-    .align {
-    margin: 0 15rem;
-    }
-  } */
   @media screen and (max-width: 1100px) {
     .align {
     margin: 0 10%;
