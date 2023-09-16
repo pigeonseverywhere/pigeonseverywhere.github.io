@@ -53,8 +53,8 @@ const handleTop = () => {
 </script>
 
 
-<main class="snap-mandatory snap-y">
-  <section id="about" class="flex items-start justify-items-center w-full snap-start snap-always">
+<main class="snap-mandatory">
+  <section id="about" class="flex items-start justify-items-center w-full">
     <About/>
   </section>
  

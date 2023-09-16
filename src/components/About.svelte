@@ -11,14 +11,26 @@
     data === 'light' ? isLight = true : isLight = false;
   })
 
-  const handleClick = (from) => {
-    switch (from) {
-      case 'projects': 
-        window.location.href = "#projects";
-        break;
-      case 'contact':
-        window.location.href = "mailto:yunshudai2010@gmail.com";
-        break;
+  // const handleClick = (from) => {
+  //   switch (from) {
+  //     case 'projects': 
+  //       window.location.href = "#projects";
+  //       break;
+  //     case 'contact':
+  //       window.location.href = "mailto:yunshudai2010@gmail.com";
+  //       break;
+  //   }
+  // }
+  function handleClick(target) {
+		const el = document.querySelector(target);
+    if (target === "contact") {
+      window.location.href = "mailto:yunshudai2010@gmail.com";
+    } else if (!el) {
+      return;
+    } else {
+      el.scrollIntoView({
+      behavior: 'smooth'
+    });
     }
   }
 
@@ -53,13 +65,13 @@
       </div>
       <!-- <Links/> -->
       <div class="flex space-x-3 py-5">
-        <button class="text-text rounded-md bg-background brightness-200 flex" on:click={() => handleClick('projects')}>
+        <button id="#projects" on:click|preventDefault={()=>handleClick('#projects')} class="text-text rounded-md bg-background brightness-200 flex pointer-events-all">
           Projects
-          <span >
+          <span>
             <Icon icon="ep:right"width="20" class="text-accent mt-0.5 ml-2 transition-transform ease-in-out"/>
           </span>
         </button>
-        <button class="text-text rounded-md bg-background brightness-200 flex" on:click={() => handleClick('contact')}>
+        <button on:click={()=>handleClick('contact')} class="text-text rounded-md bg-background brightness-200 flex">
           Contact
           <span>
             <Icon icon="ep:right"width="20" class="text-accent mt-0.5 ml-2 transition-transform ease-in-out"/>
@@ -70,7 +82,7 @@
     </div>
     <img src={isLight ? lightLogo : darkLogo} alt="logo" class="self-start pl-10 -mt-5 md:hidden" width="300">
   </div>
-  <a href="#projects" class="md:hidden self-center text-text brightness-75 py-2 rounded  hover:bg-transparent flex flex-col align-center items-center -translate-y-56 hover:-translate-y-52 transition-transform ease-in-out duration-700">
+  <a href="#projects" class="hidden self-center text-text brightness-75 py-2 rounded  hover:bg-transparent tall:flex flex-col align-center items-center -translate-y-52 lg:-translate-y-40 lg:hover:-translate-y-36 hover:-translate-y-48 transition-transform ease-in-out duration-700">
     <Icon icon="mingcute:down-fill" width="20"/>
   </a>
  
