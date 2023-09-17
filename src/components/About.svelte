@@ -65,16 +65,16 @@
       </div>
       <!-- <Links/> -->
       <div class="flex space-x-3 py-5">
-        <button id="#projects" on:click|preventDefault={()=>handleClick('#projects')} class="text-text rounded-md bg-background brightness-200 flex pointer-events-all">
+        <button id="#projects" on:click|preventDefault={()=>handleClick('#projects')} class="font-semibold shadow-md text-text rounded-md bg-secondary flex hover:shadow-sm transition-all focus:translate-y-px">
           Projects
           <span>
-            <Icon icon="ep:right"width="20" class="text-accent mt-0.5 ml-2 transition-transform ease-in-out"/>
+            <Icon icon="ep:right"width="20" class="font-semibold text-accent mt-0.5 ml-2 transition-transform ease-in-out"/>
           </span>
         </button>
-        <button on:click={()=>handleClick('contact')} class="text-text rounded-md bg-background brightness-200 flex">
+        <button on:click={()=>handleClick('contact')} class="font-semibold shadow-md text-text  rounded-md bg-secondary flex hover:shadow-sm transition-all focus:translate-y-px">
           Contact
           <span>
-            <Icon icon="ep:right"width="20" class="text-accent mt-0.5 ml-2 transition-transform ease-in-out"/>
+            <Icon icon="ep:right"width="20" class="font-semibold text-accent mt-0.5 ml-2 transition-transform ease-in-out"/>
           </span>
         </button>
       </div>
@@ -90,7 +90,7 @@
 
 <style>
   button:hover span{
-    transform: translate(0.25rem);
+    transform: translate(0.125rem);
     transition-timing-function: ease-in-out;
     transition-duration: 0.2s;
   }
