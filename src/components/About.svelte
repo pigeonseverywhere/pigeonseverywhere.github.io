@@ -55,13 +55,10 @@
         <h1 class="font-bold font-sourcesans tracking-wide text-text text-6xl md:text-4xl mb-2">Hi, I'm Yunshu Dai</h1>
       </div>
       <div use:actionWhenInViewport class:active={inView} class="reveal">
-        <h1 class="font-bold text-text text-xl brightness-75 ">Software Engineer <a class="text-text font-bold transition-colors hover:text-accent hover:brightness-125" href="https://www.sunswift.com">@Sunswift Racing UNSW</a></h1>
-      </div>
-      <div use:actionWhenInViewport class:active={inView} class="reveal">
         <h1 class:active={inView} class="font-bold text-text text-xl brightness-75 reveal">Part time freelance illustrator</h1>
       </div>
       <div use:actionWhenInViewport class:active={inView} class="reveal">
-        <h1 class="font-bold text-text text-xl brightness-75 reveal">UNSW Computer Science/Media Arts</h1>
+        <h1 class="font-bold text-text text-xl brightness-75 reveal">UNSW Computer Science/Media Arts Graduate</h1>
       </div>
       <!-- <Links/> -->
       <div class="flex space-x-3 py-5">
