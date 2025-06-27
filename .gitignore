@@ -8,6 +8,8 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+.next/*
+.swc/*
 dist
 dist-ssr
 *.local
@@ -26,3 +28,6 @@ dist-ssr
 
 *.swp*
 *.un*
+
+# Environment files
+*.env*
