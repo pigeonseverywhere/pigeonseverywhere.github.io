@@ -1,6 +1,5 @@
-import React from "react"
-import './globals.css'
-
+import React from "react";
+import './globals.css';
 
 export default function RootLayout({
   children,
@@ -9,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="prose">{children}</body>
     </html>
   )
 }

@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "baseUrl": "src/",
+    "baseUrl": "/",
     "lib": [
       "dom",
       "dom.iterable",
@@ -14,14 +14,14 @@
     "incremental": true,
     "module": "esnext",
     "esModuleInterop": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "types": [
       "node",
       "mdx"
-     ],
+    ],
     "plugins": [
       {
         "name": "next"
@@ -33,7 +33,9 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "**/*.mdx"],
+    "**/*.mdx",
+    ".next/dev/types/**/*.ts"
+  ],
   "exclude": [
     "node_modules"
   ]
