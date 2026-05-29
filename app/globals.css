@@ -1,2 +1,61 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: var(--dm-sans);
+  --font-mono: var(--dm-mono);
+}
+
+/* Light mode */
+:root {
+  --bg: #FDFAF4;
+  --surface: #F3F1EB;
+  --fg: #062035;
+  --fg-secondary: #0A4B75;
+  --accent: #F4BF33;
+  --muted: rgb(6 32 53 / 0.30);
+  --border: rgb(6 32 53 / 0.15);
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+  --bg: #062035;
+  --surface: #112A3E;
+  --fg: #F4E8CE;
+  --fg-secondary: #7BAEC8;
+  --accent: #F4BF33;
+  --muted: rgb(244 232 206 / 0.35);
+  --border: rgb(244 232 206 / 0.12);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body, html { margin: 0; padding: 0; }
+
+code {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.875em;
+  color: var(--fg);
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+html { scroll-behavior: smooth; }
+
+.nav-desktop { display: flex; }
+.nav-mobile   { display: none; }
+
+@media (max-width: 640px) {
+  .nav-desktop { display: none; }
+  .nav-mobile   { display: flex; }
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans, 'DM Sans', sans-serif);
+  font-size: 15px;
+  line-height: 1.65;
+  transition: background-color 120ms ease, color 120ms ease;
+}

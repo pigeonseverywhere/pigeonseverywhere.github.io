@@ -30,6 +30,7 @@ dist-ssr
 *.un*
 
 .context~
+tsconfig.tsbuildinfo
 
 # Environment files
 *.env*
