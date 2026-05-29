@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import LightSwitch from './LightSwitch'
 
 const SECTIONS = [
   { n: '01', label: 'Home',     href: '/' },
@@ -12,9 +13,10 @@ const SECTIONS = [
 
 interface NavBarProps {
   onThemeToggle: () => void
+  isDark: boolean
 }
 
-export default function NavBar({ onThemeToggle }: NavBarProps) {
+export default function NavBar({ onThemeToggle, isDark }: NavBarProps) {
   const pathname = usePathname()
 
   return (
@@ -65,23 +67,9 @@ export default function NavBar({ onThemeToggle }: NavBarProps) {
           )
         })}
 
-        <button
-          onClick={onThemeToggle}
-          title="Toggle theme (M)"
-          style={{
-            marginLeft: 'auto',
-            fontFamily: 'var(--font-mono, monospace)',
-            fontSize: '13px',
-            cursor: 'pointer',
-            border: 'none',
-            background: 'none',
-            color: 'var(--fg-secondary)',
-            padding: '0 4px',
-            outline: 'none',
-          }}
-        >
-          ◐
-        </button>
+        <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center' }}>
+          <LightSwitch isDark={isDark} onToggle={onThemeToggle} />
+        </div>
       </nav>
 
       {/* Mobile: bottom tab bar */}
