@@ -67,7 +67,7 @@ export default function NavBar({ onThemeToggle, isDark }: NavBarProps) {
           )
         })}
 
-        <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center' }}>
+        <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', alignSelf: 'center' }}>
           <LightSwitch isDark={isDark} onToggle={onThemeToggle} />
         </div>
       </nav>
