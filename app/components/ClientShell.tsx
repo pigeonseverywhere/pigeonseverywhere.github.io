@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
 import NavBar from './NavBar'
 import KeyHintFooter from './KeyHintFooter'
-import LightSwitch from './LightSwitch'
+import { ThemeContext } from './ThemeContext'
 
 const ROUTES = ['/', '/about', '/projects', '/contact']
 
@@ -44,19 +44,12 @@ export default function ClientShell({ children }: { children: React.ReactNode })
   }, [activeIdx])
 
   return (
-    <>
+    <ThemeContext.Provider value={{ isDark, toggle: toggleTheme }}>
       <NavBar onThemeToggle={toggleTheme} isDark={isDark} />
-      {/* Mobile-only: fixed top-right theme switch */}
-      <div
-        className="nav-mobile"
-        style={{ position: 'fixed', top: '16px', right: '16px', zIndex: 60 }}
-      >
-        <LightSwitch isDark={isDark} onToggle={toggleTheme} />
-      </div>
       <main style={{ paddingTop: '36px', paddingBottom: '80px' }}>
         {children}
       </main>
       <KeyHintFooter visible={hintsVisible} />
-    </>
+    </ThemeContext.Provider>
   )
 }

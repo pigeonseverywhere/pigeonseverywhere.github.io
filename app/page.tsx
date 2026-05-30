@@ -1,3 +1,5 @@
+import MobileThemeToggle from './components/MobileThemeToggle'
+
 const sectionStyle: React.CSSProperties = {
   maxWidth: '700px',
   padding: '80px 48px',
@@ -6,12 +8,15 @@ const sectionStyle: React.CSSProperties = {
 export default function Home() {
   return (
     <section style={sectionStyle}>
-      <p
-        className="font-mono"
-        style={{ fontSize: '11px', color: 'var(--fg-secondary)', letterSpacing: '0.05em', marginBottom: '20px' }}
-      >
-        <span style={{ color: 'var(--accent)' }}>●</span> SYDNEY, AU · SOFTWARE ENGINEER
-      </p>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
+        <p
+          className="font-mono"
+          style={{ fontSize: '11px', color: 'var(--fg-secondary)', letterSpacing: '0.05em', margin: 0 }}
+        >
+          <span style={{ color: 'var(--accent)' }}>●</span> SYDNEY, AU · SOFTWARE ENGINEER
+        </p>
+        <MobileThemeToggle />
+      </div>
       <h1 className="font-mono" style={{ fontSize: '36px', lineHeight: 1.2 }}>
         yunshu dai<span style={{ color: 'var(--accent)' }}>.</span>
       </h1>

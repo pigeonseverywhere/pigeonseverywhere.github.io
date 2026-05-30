@@ -1,9 +1,10 @@
+import Link from 'next/link'
+import MobileThemeToggle from '../components/MobileThemeToggle'
+
 const sectionStyle: React.CSSProperties = {
   maxWidth: '700px',
   padding: '80px 48px',
 }
-
-import Link from 'next/link'
 
 const PROJECTS: { name: string; stack: string; description: React.ReactNode; href?: string }[] = [
   {
@@ -32,7 +33,10 @@ const PROJECTS: { name: string; stack: string; description: React.ReactNode; hre
 export default function Projects() {
   return (
     <section style={sectionStyle}>
-      <p className="font-mono" style={{ fontSize: '11px', color: 'var(--fg-secondary)' }}>03</p>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <p className="font-mono" style={{ fontSize: '11px', color: 'var(--fg-secondary)', margin: 0 }}>03</p>
+        <MobileThemeToggle />
+      </div>
       <h1 className="font-mono" style={{ fontSize: '24px', marginTop: '8px' }}>projects</h1>
       <div style={{ marginTop: '24px', display: 'flex', flexDirection: 'column', gap: '16px', maxWidth: '560px' }}>
         {PROJECTS.map((p) => {
